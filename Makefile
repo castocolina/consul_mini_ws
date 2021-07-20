@@ -18,3 +18,6 @@ open-ui:
 add-data:
 	bash -x scripts/consul-init-data.sh
 
+exercise1:
+	bash -x reading/exercise1/entry.sh
+

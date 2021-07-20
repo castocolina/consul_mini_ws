@@ -1,0 +1,1 @@
+{{key "my-team/comp2-yaml"}}
