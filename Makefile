@@ -21,3 +21,5 @@ add-data:
 exercise1:
 	bash -x reading/exercise1/entry.sh
 
+exercise2:
+	bash -x reading/exercise2/entry.sh

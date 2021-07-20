@@ -44,6 +44,13 @@ Template once
 Execute:
 `make exercise1`
 
+### Exercise 2: Use Add / Change data from UI
+
+Exec mode
+
+Execute:
+`make exercise2`
+
 ## Links:
 
 - https://learn.hashicorp.com/tutorials/consul/get-started?in=consul/getting-started
@@ -51,5 +58,6 @@ Execute:
 - https://github.com/hashicorp/consul-template#installation
 - https://github.com/hashicorp/consul-template#environment
 - https://github.com/hashicorp/consul-template/blob/master/docs/templating-language.md
+- https://github.com/hashicorp/consul-template/blob/master/docs/modes.md#exec-mode
 
 
