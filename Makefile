@@ -15,3 +15,6 @@ commpose-start: commpose-up
 open-ui:
 	xdg-open http://127.0.0.1:8500/ui >/dev/null
 
+add-data:
+	bash -x scripts/consul-init-data.sh
+

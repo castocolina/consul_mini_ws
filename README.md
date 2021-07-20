@@ -31,9 +31,15 @@ Or visit:
 Execute:
 `make run-local`
 
+### Add data
+
+Execute:
+`make add-data`
+
 ## Links:
 
 - https://learn.hashicorp.com/tutorials/consul/get-started?in=consul/getting-started
+- https://www.consul.io/commands/kv/put
 - https://github.com/hashicorp/consul-template#installation
 
 

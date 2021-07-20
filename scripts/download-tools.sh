@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASEDIR=$(dirname "$0")
-DOWNDIR=$BASEDIR/tmp
+DOWNDIR=$BASEDIR/../tmp
 
 source $BASEDIR/common.sh
 
