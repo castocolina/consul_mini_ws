@@ -9,7 +9,8 @@ The objective of this small workshop is only to use Consul as key/value configra
  1. Start Agent node
  1. Add data from CLI
  1. Exercise 1: Using templates
- 1. Exercise 2: Use Add / Change data from UI
+ 1. Exercise 2: CLI Program. Use Add / Change data from UI
+ 1. Exercise 3: Rest program. Using config file for templating and exec behavior
  1. Create template from data
  1. Template once before start application
  1. Use template, start application & restart with each changes
@@ -44,12 +45,19 @@ Template once
 Execute:
 `make exercise1`
 
-### Exercise 2: Use Add / Change data from UI
+### Exercise 2: CLI Program. Use Add / Change data from UI
 
 Exec mode
 
 Execute:
 `make exercise2`
+
+### Exercise 3: Rest program. Using config file for templating and exec behavior
+
+Config options with npm sample app
+
+Execute:
+`make exercise3`
 
 ## Links:
 
@@ -59,5 +67,6 @@ Execute:
 - https://github.com/hashicorp/consul-template#environment
 - https://github.com/hashicorp/consul-template/blob/master/docs/templating-language.md
 - https://github.com/hashicorp/consul-template/blob/master/docs/modes.md#exec-mode
+- https://github.com/hashicorp/consul-template/blob/master/docs/configuration.md#exec-mode
 
 

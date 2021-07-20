@@ -23,3 +23,6 @@ exercise1:
 
 exercise2:
 	bash -x reading/exercise2/entry.sh
+
+exercise3:
+	bash -x reading/exercise3/entry.sh
