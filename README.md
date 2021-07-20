@@ -37,6 +37,13 @@ Execute:
 Execute:
 `make add-data`
 
+### Exercise 1: Using templates
+
+Template once
+
+Execute:
+`make exercise1`
+
 ## Links:
 
 - https://learn.hashicorp.com/tutorials/consul/get-started?in=consul/getting-started
