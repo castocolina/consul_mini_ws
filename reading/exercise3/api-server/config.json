@@ -1,4 +1,4 @@
 {
-    "gretting": "Hello World Jose Ramon",
-    "delay": 10
+    "greeting": "Hello World",
+    "delay": 1
 }

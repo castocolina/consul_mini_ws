@@ -18,11 +18,11 @@ function sleep(seconds) {
 
 app.get('/', async (req, res) => {
   await sleep(nconf.get('delay'))
-  res.send(`${new Date().toISOString()} - ${nconf.get('gretting')}`)
+  res.send(`${new Date().toISOString()} - ${nconf.get('greeting')}`)
 })
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
-  console.log('With message:', nconf.get('gretting'))
+  console.log('With message:', nconf.get('greeting'))
   console.log('And delay:', nconf.get('delay'))
 })

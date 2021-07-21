@@ -1,4 +1,4 @@
 {
-    "gretting": "{{key "my-team/common/gretting"}}",
+    "greeting": "{{key "my-team/common/greeting"}}",
     "delay": {{key "my-team/common/delay"}}
 }
