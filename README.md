@@ -11,10 +11,7 @@ The objective of this small workshop is only to use Consul as key/value configra
  1. Exercise 1: Using templates
  1. Exercise 2: CLI Program. Use Add / Change data from UI
  1. Exercise 3: Rest program. Using config file for templating and exec behavior
- 1. Create template from data
- 1. Template once before start application
- 1. Use template, start application & restart with each changes
- 1. Spring app reload context
+ 1. Exercise 4: Rest program. Spring configuration, only reload beans afected by keys/config
  1. Security
 
 
@@ -40,24 +37,35 @@ Execute:
 
 ### Exercise 1: Using templates
 
-Template once
+Template once. Create template and parse file from data
 
 Execute:
 `make exercise1`
 
 ### Exercise 2: CLI Program. Use Add / Change data from UI
 
-Exec mode
+Exec mode. Template once before start application and make changes for proccess control (kill and start)
 
 Execute:
 `make exercise2`
 
 ### Exercise 3: Rest program. Using config file for templating and exec behavior
 
-Config options with npm sample app
+Config options with npm sample app. Use template, start application & restart with each changes
 
 Execute:
 `make exercise3`
+
+### Exercise 4: Rest program. Spring configuration, only reload beans afected by keys/config
+
+Load the application & change the greeting message prefix
+
+Execute:
+`make exercise4`
+
+## TODO
+1. Security
+2. Cluster configurations
 
 ## Links:
 
