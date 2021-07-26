@@ -22,10 +22,10 @@ Excute:
 `make install-tools`
 
 Or visit:
-- [consul](https://learn.hashicorp.com/tutorials/consul/get-started-install?in=consul/getting-started)
-- [consul-template](https://github.com/hashicorp/consul-template#installation)
-- Optional [jq](https://stedolan.github.io/jq/download/)
-- Optional [yq](https://github.com/mikefarah/yq#install)
+- [consul v1.10](https://learn.hashicorp.com/tutorials/consul/get-started-install?in=consul/getting-started)
+- [consul-template v0.2x](https://github.com/hashicorp/consul-template#installation)
+- Optional [jq v1.6](https://stedolan.github.io/jq/download/)
+- Optional [yq v4.x](https://github.com/mikefarah/yq#install)
 
 ### Start Agent node
 

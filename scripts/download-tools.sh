@@ -67,6 +67,7 @@ echo
 
 JQ_VERSION=$(get_github_latest_release stedolan/jq)
 JQ_PLATF="${OS_PLATFORM/linux_amd64/linux64}"
+JQ_PLATF="${JQ_PLATF/darwin_amd64/osx-amd64}"
 JQ_FNAME="jq-${JQ_PLATF}"
 JQ_URL="https://github.com/stedolan/jq/releases/download/jq-${JQ_VERSION}/$JQ_FNAME"
 
@@ -79,3 +80,11 @@ echo
   sudo mv -v $DOWNDIR/${JQ_FNAME} /usr/local/bin/jq && \
   chmod +x /usr/local/bin/jq
 }
+
+
+echo, echo
+set -x
+consul --version
+consul-template --version
+jq --version
+yq --version
