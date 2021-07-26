@@ -82,7 +82,7 @@ echo
 }
 
 
-echo, echo
+echo; echo; echo; echo;
 set -x
 consul --version
 consul-template --version
