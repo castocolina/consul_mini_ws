@@ -2,6 +2,9 @@ server:
   port : 8081
 
 spring:
+  profiles:
+    active: dev
+    default: dev
   application:
     name: ${name}
   config:

@@ -33,9 +33,25 @@ EOF
 consul kv put my-team/common/data "${MY_SAMMPLE_YAML}"
 
 read -r -d '' MY_SAMMPLE_YAML << EOF
+common:
+  greeting: "my-team > common,dev == HellOoo, %s!"
+  delay: 1
+EOF
+
+consul kv put my-team/common,dev/data "${MY_SAMMPLE_YAML}"
+
+read -r -d '' MY_SAMMPLE_YAML << EOF
 consul-demo2:
   greeting: "my-team > consul-demo2 == HellOoo, %s!"
   delay: 1
 EOF
 
 consul kv put my-team/consul-demo2/data "${MY_SAMMPLE_YAML}"
+
+read -r -d '' MY_SAMMPLE_YAML << EOF
+consul-demo2:
+  greeting: "my-team > consul-demo2,dev == HellOoo, %s!"
+  delay: 1
+EOF
+
+consul kv put my-team/consul-demo2,dev/data "${MY_SAMMPLE_YAML}"
