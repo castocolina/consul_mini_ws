@@ -1,0 +1,47 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'groovy'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+ext {
+	set('springCloudVersion', "2020.0.3")
+}
+
+configurations {
+	// exclude Reactor Netty
+	compile.exclude module: 'spring-boot-starter-reactor-netty'
+	compile.exclude module: "spring-security-rsa"
+}
+
+processResources {
+    expand(project.properties)
+}
+
+dependencies {
+
+	implementation 'org.codehaus.groovy:groovy'
+	implementation 'org.springframework.boot:spring-boot-starter-jetty'
+	implementation ('org.springframework.boot:spring-boot-starter-web') {
+		exclude module: 'spring-boot-starter-tomcat'
+	}
+	implementation 'org.springframework.cloud:spring-cloud-starter-consul-config'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
+
+test {
+	useJUnitPlatform()
+}

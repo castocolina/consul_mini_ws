@@ -12,6 +12,7 @@ The objective of this small workshop is only to use Consul as key/value configra
  1. Exercise 2: CLI Program. Use Add / Change data from UI
  1. Exercise 3: Rest program. Using config file for templating and exec behavior
  1. Exercise 4: Rest program. Spring configuration, only reload beans afected by keys/config
+ 1. Exercise 5: Rest program. Multiple Spring configurations, format = yaml
  1. Security
 
 
@@ -31,6 +32,10 @@ Or visit:
 
 Execute:
 `make run-local`
+
+Execute:
+`make open-ui`
+to open the consul agent UI
 
 ### Add data
 
@@ -56,7 +61,15 @@ Execute:
 Config options with npm sample app. Use template, start application & restart with each changes
 
 Execute:
+`cd  reading/exercise3/api-server && npm i && cd ../../../`
+to install node dependencies
+
+Execute:
 `make exercise3`
+
+Execute:
+`make open-exercise3`
+to open the rest endpoint
 
 ### Exercise 4: Rest program. Spring configuration, only reload beans afected by keys/config
 
@@ -64,6 +77,31 @@ Load the application & change the greeting message prefix
 
 Execute:
 `make exercise4`
+
+Execute:
+`make open-exercise4`
+to open the rest endpoint
+
+### Exercise 5: Rest program. Multiple Spring configurations, format = yaml
+
+Load the application & change the greeting message for application and common settings
+
+We have 2 yaml config keys:
+- my-team/common/data
+- my-team/consul-demo2/data
+
+These have a default prefix: `my-team`
+
+with paths:
+- common
+- consul-demo2
+
+Execute:
+`make exercise5`
+
+Execute:
+`make open-exercise5`
+to open the endpoints
 
 ## TODO
 1. Security
@@ -78,5 +116,5 @@ Execute:
 - https://github.com/hashicorp/consul-template/blob/master/docs/templating-language.md
 - https://github.com/hashicorp/consul-template/blob/master/docs/modes.md#exec-mode
 - https://github.com/hashicorp/consul-template/blob/master/docs/configuration.md#exec-mode
-
-
+- https://docs.spring.io/spring-cloud-consul/docs/current/reference/html/#spring-cloud-consul-config
+- https://docs.spring.io/spring-cloud-consul/docs/current/reference/html/appendix.html

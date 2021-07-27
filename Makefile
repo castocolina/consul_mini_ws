@@ -13,7 +13,11 @@ commpose-up:
 commpose-start: commpose-up
 
 open-ui:
-	xdg-open http://127.0.0.1:8500/ui >/dev/null
+	xdg-open http://127.0.0.1:8500/ui >/dev/null || open http://127.0.0.1:8500/ui
+
+load-data: add-data
+
+init-data: add-data
 
 add-data:
 	bash -x scripts/consul-init-data.sh
@@ -29,3 +33,16 @@ exercise3:
 
 exercise4:
 	bash -x reading/exercise4/entry.sh
+
+exercise5:
+	bash -x reading/exercise5/entry.sh
+
+open-exercise3:
+	xdg-open http://127.0.0.1:3000 >/dev/null || open http://127.0.0.1:3000
+
+open-exercise4:
+	xdg-open http://127.0.0.1:8080/greeting >/dev/null || open http://127.0.0.1:8080/greeting
+
+open-exercise5:
+	( xdg-open http://127.0.0.1:8081/greeting >/dev/null && xdg-open http://127.0.0.1:8081/common >/dev/null ) \
+	|| ( open http://127.0.0.1:8081/greeting >/dev/null && open http://127.0.0.1:8081/common >/dev/null )

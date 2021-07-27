@@ -92,3 +92,4 @@ out/
 .vscode/
 
 *.zip
+reading/exercise3/api-server/config.json

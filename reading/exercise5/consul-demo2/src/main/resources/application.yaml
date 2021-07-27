@@ -1,0 +1,42 @@
+server:
+  port : 8081
+
+spring:
+  application:
+    name: ${name}
+  config:
+    # Only yhe server address, use the prefix for context
+    import: "consul:localhost:8500"
+
+  ##https://docs.spring.io/spring-cloud-consul/docs/current/reference/html/appendix.html
+  cloud:
+    consul:
+      config:
+        enabled: true
+        format: yaml
+        # data-key: data
+        dataKey: data
+        # read from consul:localhost:8500/my-team
+        prefix: my-team
+        # default-context: common
+        defaultContext: common
+        name: ${name}
+        # fail-fast: true
+        failFast: true
+        watch:
+          # wait-time: 5
+          waitTime: 5
+          delay: 100
+          enabled: true
+
+
+common:
+  greeting: "HellOoo, %s!"
+  delay: 1
+
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.cloud.config: DEBUG
+    org.springframework.cloud.consul.config: DEBUG
