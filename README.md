@@ -116,5 +116,6 @@ to open the endpoints
 - https://github.com/hashicorp/consul-template/blob/master/docs/templating-language.md
 - https://github.com/hashicorp/consul-template/blob/master/docs/modes.md#exec-mode
 - https://github.com/hashicorp/consul-template/blob/master/docs/configuration.md#exec-mode
-- https://docs.spring.io/spring-cloud-consul/docs/current/reference/html/#spring-cloud-consul-config
-- https://docs.spring.io/spring-cloud-consul/docs/current/reference/html/appendix.html
+- SpringBoot: https://docs.spring.io/spring-cloud-consul/docs/current/reference/html/#spring-cloud-consul-config
+- SpringBoot: https://docs.spring.io/spring-cloud-consul/docs/current/reference/html/appendix.html
+- Quarkus: https://quarkus.io/guides/consul-config
