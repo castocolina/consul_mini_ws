@@ -33,8 +33,8 @@ spring:
           enabled: true
 
 
-common:
-  greeting: "HellOoo, %s!"
+greeting:
+  message: "Hard yaml resource == HellOoo, %s!"
   delay: 1
 
 

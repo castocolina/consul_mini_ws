@@ -16,29 +16,16 @@ public class GreetingController {
 	@Value("\${spring.application.name:Sample}")
 	private final String appName;
 
-	@Value("\${common.greeting:Hell0, %s!}")
-	private final String commonTemplate;
-
-    @Value("\${consul-demo2.greeting:Hell0, %s!}")
+	@Value("\${greeting.message: Hard Coded in class = Hell0, %s!}")
 	private final String template;
 
-    @Value("\${common.delay:5}")
-	private final Integer commonDelay;
-
-	@Value("\${consul-demo2.delay:5}")
+    @Value("\${greeting.delay:5}")
 	private final Integer delay;
 
 	private final AtomicLong counter = new AtomicLong();
 
 	public GreetingController(){
 		super();
-		System.out.println(String.format("APP NAME: %s", appName));
-	}
-
-	@GetMapping("/common")
-	public Greeting common(@RequestParam(value = "name", defaultValue = "Common World") String name) {
-		TimeUnit.SECONDS.sleep(commonDelay);
-		return new Greeting(counter.incrementAndGet(), String.format(commonTemplate, name));
 	}
 
 	@GetMapping("/greeting")

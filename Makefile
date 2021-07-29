@@ -44,5 +44,5 @@ open-exercise4:
 	xdg-open http://127.0.0.1:8080/greeting >/dev/null || open http://127.0.0.1:8080/greeting
 
 open-exercise5:
-	( xdg-open http://127.0.0.1:8081/greeting >/dev/null && xdg-open http://127.0.0.1:8081/common >/dev/null ) \
-	|| ( open http://127.0.0.1:8081/greeting >/dev/null && open http://127.0.0.1:8081/common >/dev/null )
+	( xdg-open http://127.0.0.1:8081/greeting >/dev/null ) \
+	|| ( open http://127.0.0.1:8081/greeting >/dev/null )
